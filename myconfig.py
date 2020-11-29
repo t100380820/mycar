@@ -184,13 +184,13 @@ JOYSTICK_MAX_THROTTLE = 1             #this scalar is multiplied with the -1 to 
 # RECORD_DURING_AI = False        #normally we do not record during ai mode. Set this to true to get image and steering records for your Ai. Be careful not to use them to train.
 # 
 # #LED
-# HAVE_RGB_LED = False            #do you have an RGB LED like https://www.amazon.com/dp/B07BNRZWNF
-# LED_INVERT = False              #COMMON ANODE? Some RGB LED use common anode. like https://www.amazon.com/Xia-Fly-Tri-Color-Emitting-Diffused/dp/B07MYJQP8B
+HAVE_RGB_LED = True             #do you have an RGB LED like https://www.amazon.com/dp/B07BNRZWNF
+LED_INVERT = True               #COMMON ANODE? Some RGB LED use common anode. like https://www.amazon.com/Xia-Fly-Tri-Color-Emitting-Diffused/dp/B07MYJQP8B
 # 
 # #LED board pin number for pwm outputs
 # #These are physical pinouts. See: https://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/
 # LED_PIN_R = 12
-# LED_PIN_G = 10
+LED_PIN_G = 18
 # LED_PIN_B = 16
 # 
 # #LED status color, 0-100
@@ -222,7 +222,7 @@ JOYSTICK_MAX_THROTTLE = 1             #this scalar is multiplied with the -1 to 
 # #BEHAVIORS
 # #When training the Behavioral Neural Network model, make a list of the behaviors,
 # #Set the TRAIN_BEHAVIORS = True, and use the BEHAVIOR_LED_COLORS to give each behavior a color
-# TRAIN_BEHAVIORS = False
+TRAIN_BEHAVIORS = True
 # BEHAVIOR_LIST = ['Left_Lane', "Right_Lane"]
 # BEHAVIOR_LED_COLORS =[ (0, 10, 0), (10, 0, 0) ] #RGB tuples 0-100 per chanel
 # 
